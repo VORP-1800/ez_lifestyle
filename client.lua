@@ -5,9 +5,9 @@ end
 
 exports('GetLifeStyle', GetLifeStyle)
 
-RegisterCommand("lifestyle", function()
+--[[RegisterCommand("lifestyle", function()
     OpenStyleMenu()
-end, true)
+end, false)]]
 
 OpenStyleMenu = function()
     SetNuiFocus(true, true)

@@ -6,10 +6,10 @@ Config.ChooseLifeStyleOnce = true -- If true, players can only choose lifestyle 
 
 Config.LifeSyles = {
     outlaw = {
-        name= "The Outlaw",
+        name= "The Outlaw", -- Armadillo
         description=  "A life of crime and rebellion. Rob, smuggle, and live by your own rules, always evading the law.",
-        spawnLocation = vector3(1227.77, -1304.7, 76.95), -- Set to spawn location to spawn at
-        spawnHeading = 140.49, -- Set to heading to spawn at
+        spawnLocation = vector3(-3710.08, -2607.86, -13.41), -- Set to spawn location to spawn at
+        spawnHeading = 143.75, -- Set to heading to spawn at
         starterItems = {
             {
                 label = "Cattleman Revolver",
@@ -19,7 +19,7 @@ Config.LifeSyles = {
             },
             {
                 label = "Lockpick",
-                quantity = 7,
+                quantity = 5,
                 name = 'lockpick'
             },
             {
@@ -29,42 +29,45 @@ Config.LifeSyles = {
             },
             {
                 label = "Cash",
-                quantity = 50,
+                quantity = 250,
                 type = 'money'
             }
         }
     },
-    bounty_hunter = {
-        name= "The Bounty Hunter",
-        description=  "A skilled tracker paid to bring criminals to justice, dead or alive.",
-        spawnLocation = vector3(-174.3, 621.18, 114.08),
-        spawnHeading = 240.38,
+    farmer = {
+        name= "The Farmer", -- strawberry
+        description=  "A person that enjoys farming and planting crops.",
+        spawnLocation = vector3(-1783.02, -441.37, 155.23), -- Strawberry
+        spawnHeading = 340.68,
         starterItems = {
             {
-                label = "Cattleman Revolver",
+                label = "Garden Hoe",
                 quantity = 1,
-                name = 'WEAPON_REVOLVER_CATTLEMAN',
-                type = 'weapon'
+                name = 'hoe',
             },
             {
-                label = "Lasso",
+                label = "Campfire",
                 quantity = 1,
-                name = 'WEAPON_LASSO',
-                type = 'weapon'
+                name = 'campfire',
             },
             {
-                label = "Whiskey Bottle",
-                quantity = 5,
-                name = 'whisky'
+                label = "Buckets of Water",
+                quantity = 2,
+                name = 'wateringcan_cleanwater'
             },
+            {
+                label = "Cash",
+                quantity= 350,
+                type = 'money'
+            }
 
         }
     },
     hunter = {
-        name= "The Hunter",
+        name= "The Hunter", -- Valentine
         description=  "A self-reliant wanderer who hunts for food, trade, and survival in the wilderness.",
-        spawnLocation = vector3(-687.3, -1242.249, 43.1),
-        spawnHeading = 90.58,
+        spawnLocation = vector3(-167.84, 633.53, 114.03),
+        spawnHeading = 230.16,
         starterItems = {
             {
                 label = "Bow",
@@ -74,25 +77,27 @@ Config.LifeSyles = {
             },
             {
                 label = "Arrows",
-                quantity = 7,
+                quantity = 3,
                 name = 'ammoarrownormal'
             },
             {
                 label = "Hunting Knife",
-                quantity = 5,
+                quantity = 1,
                 name = 'WEAPON_MELEE_KNIFE',
                 type = 'weapon'
             },
             {
                 label = "Cash",
-                quantity= 100,
+                quantity= 200,
                 type = 'money'
             }
         }
     },
     civilian = {
-        name= "The Civilian",
+        name= "The Civilian", -- Blackwater
         description=  "An honest worker focused on stability, making a living through trade or craft.",
+        spawnLocation = vector3(-868.61, -1329.47, 43.95),
+        spawnHeading = 279.09,
         starterItems = {
             {
                 label = "Lantern",
@@ -107,17 +112,17 @@ Config.LifeSyles = {
             },
             {
                 label = "Food",
-                quantity = 5,
+                quantity = 10,
                 name = 'consumable_peach'
             },
             {
                 label = "Water",
                 quantity = 15,
-                name = 'water'
+                name = 'consumable_water'
             },
             {
                 label = "Cash",
-                quantity= 200,
+                quantity= 400,
                 type = 'money'
             }
         }
